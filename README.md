@@ -26,3 +26,5 @@ Por padrão, a biblioteca busca por hyperlinks. No entanto, você pode customiza
 
 Para mais informações e atualizações, visite o repositório oficial da biblioteca
 
+## Le, minha maior inspiração <3
+
