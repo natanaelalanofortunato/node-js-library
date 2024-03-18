@@ -6,35 +6,24 @@ function errorDeal (erro) {
     throw new Error(chalk.red(erro.code, 'Theres no file in this directory.'));
 }
 
-/* Async - Await */
 async function getFile(filePath) {
     try {
         const encode = 'utf-8';
-        const text = await fs.promises
-        .readFile(filePath, encode)
-        extractLinks(text);
+        const text = await fs.promises.readFile(filePath, encode)
+        return extractLinks(text);
     }   catch (erro) {
         errorDeal(erro);
     }
 }
 
-/* Some times chalk cant return the correct value while using on some cases */
-
+/* Some times chalk cant return the correct data. So if your console is not displaying the value it should, try without it */
 function extractLinks (value) {
     const regex = /\[([^[\]]*?)\]\((https?:\/\/[^\s?#.].[^\s]*)\)/gm;
     const captures = [...value.matchAll(regex)];
     const results = captures.map(capture => ({[capture[1]]: capture[2]}));
-    console.log(results);
+    return results.length !== 0 ? results : 'There are no links in the file.';
 }
-
-/* Promises with then
-function getFile(filePath) {
-    const encode = 'utf-8';
-    fs.promises
-    .readFile(filePath, encode)
-    .then((text) => console.log(chalk.green(text)))
-    .catch((erro) => errorDeal(erro))
-}
-*/
 
 getFile('./arquivos/texto.md');
+
+export default getFile;
