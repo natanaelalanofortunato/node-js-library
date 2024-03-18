@@ -12,7 +12,7 @@ Para utilizar esta biblioteca, primeiro, certifique-se de ter a versão correta 
 
 ## Guia de Uso no Terminal
 
-Para executar a busca, navegue até o diretório do projeto no terminal e execute o seguinte comando:
+Para executar a busca, navegue até o diretório do projeto no terminal e execute o seguinte comando: `node src/cli.js files`
 
 Onde `files` deve ser substituído pelo caminho dos arquivos nos quais a busca será realizada. A ferramenta processará os arquivos e retornará todas as correspondências encontradas com base na expressão regular definida.
 
