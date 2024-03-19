@@ -12,7 +12,7 @@ Para utilizar esta biblioteca, primeiro, certifique-se de ter a versão correta 
 
 ## Guia de Uso no Terminal
 
-Para executar a busca, navegue até o diretório do projeto no terminal e execute o seguinte comando: `node src/cli.js files` (para nova referência verifique a última nota de atualização).
+Para executar a busca, navegue até o diretório do projeto no terminal e execute o seguinte comando: `npm rum cli ./files` (para nova referência verifique a última nota de atualização).
 
 Onde `files` deve ser substituído pelo caminho dos arquivos nos quais a busca será realizada. A ferramenta processará os arquivos e retornará todas as correspondências encontradas com base na expressão regular definida.
 
@@ -26,7 +26,3 @@ Por padrão, a biblioteca busca por hyperlinks. No entanto, você pode customiza
 
 Para mais informações e atualizações, visite o repositório oficial da biblioteca.
 
-
-## v1.1.0
-
-Adicionado o script para não ser necessário informar o prefixo `node src/cli.js` apenas o nome do diretório.
