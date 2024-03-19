@@ -24,6 +24,4 @@ function extractLinks (value) {
     return results.length !== 0 ? results : 'There are no links in the file.';
 }
 
-getFile('./arquivos/texto.md');
-
 export default getFile;
