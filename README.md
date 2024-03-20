@@ -2,6 +2,8 @@
 
 Esta biblioteca foi desenvolvida para buscar em arquivos e, através de expressões regulares, retornar as informações solicitadas. Por padrão, a biblioteca foca na busca de hyperlinks, mas pode ser ajustada para qualquer padrão desejado utilizando expressões regulares.
 
+`Commit pattern via conventinal commits by Angular`
+
 ## Requisitos
 
 - Node.js versão 18.7.0
